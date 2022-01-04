@@ -3,16 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0829332784806D00A7CAEB /* FileBookmarkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0829322784806D00A7CAEB /* FileBookmarkHandler.swift */; };
+		3F0829352784827200A7CAEB /* ApplicationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0829342784827200A7CAEB /* ApplicationSettings.swift */; };
+		3F08293A278492FE00A7CAEB /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3F082939278492FE00A7CAEB /* WrappingHStack */; };
+		3F08293C2784934000A7CAEB /* PictureWrappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08293B2784934000A7CAEB /* PictureWrappingView.swift */; };
 		3F22D99326F90C31009A0F1A /* PicturesDeskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */; };
 		3F22D99526F90C31009A0F1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99426F90C31009A0F1A /* ContentView.swift */; };
 		3F22D99726F90C32009A0F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F22D99626F90C32009A0F1A /* Assets.xcassets */; };
 		3F22D99A26F90C32009A0F1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F22D99926F90C32009A0F1A /* Preview Assets.xcassets */; };
 		3F22D9A626F90C32009A0F1A /* PicturesDeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9A526F90C32009A0F1A /* PicturesDeskTests.swift */; };
 		3F22D9B126F90C32009A0F1A /* PicturesDeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9B026F90C32009A0F1A /* PicturesDeskUITests.swift */; };
+		3F22D9BF26F90D2B009A0F1A /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9BE26F90D2B009A0F1A /* PictureView.swift */; };
+		3F22D9C126F90E34009A0F1A /* PicturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */; };
+		3F22D9C326F91E29009A0F1A /* PictureGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C226F91E29009A0F1A /* PictureGridView.swift */; };
+		3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C426F92586009A0F1A /* PictureItem.swift */; };
+		3F22D9C726F92D1B009A0F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0829322784806D00A7CAEB /* FileBookmarkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileBookmarkHandler.swift; sourceTree = "<group>"; };
+		3F0829342784827200A7CAEB /* ApplicationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSettings.swift; sourceTree = "<group>"; };
+		3F08293B2784934000A7CAEB /* PictureWrappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureWrappingView.swift; sourceTree = "<group>"; };
 		3F22D98F26F90C31009A0F1A /* PicturesDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicturesDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesDeskApp.swift; sourceTree = "<group>"; };
 		3F22D99426F90C31009A0F1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +58,11 @@
 		3F22D9AC26F90C32009A0F1A /* PicturesDeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicturesDeskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F22D9B026F90C32009A0F1A /* PicturesDeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesDeskUITests.swift; sourceTree = "<group>"; };
 		3F22D9B226F90C32009A0F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F22D9BE26F90D2B009A0F1A /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
+		3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesRepository.swift; sourceTree = "<group>"; };
+		3F22D9C226F91E29009A0F1A /* PictureGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureGridView.swift; sourceTree = "<group>"; };
+		3F22D9C426F92586009A0F1A /* PictureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItem.swift; sourceTree = "<group>"; };
+		3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F08293A278492FE00A7CAEB /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +114,20 @@
 		3F22D99126F90C31009A0F1A /* PicturesDesk */ = {
 			isa = PBXGroup;
 			children = (
+				3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */,
 				3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */,
 				3F22D99426F90C31009A0F1A /* ContentView.swift */,
+				3F0829322784806D00A7CAEB /* FileBookmarkHandler.swift */,
 				3F22D99626F90C32009A0F1A /* Assets.xcassets */,
 				3F22D99B26F90C32009A0F1A /* Info.plist */,
 				3F22D99C26F90C32009A0F1A /* PicturesDesk.entitlements */,
 				3F22D99826F90C32009A0F1A /* Preview Content */,
+				3F22D9BE26F90D2B009A0F1A /* PictureView.swift */,
+				3F22D9C226F91E29009A0F1A /* PictureGridView.swift */,
+				3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */,
+				3F22D9C426F92586009A0F1A /* PictureItem.swift */,
+				3F0829342784827200A7CAEB /* ApplicationSettings.swift */,
+				3F08293B2784934000A7CAEB /* PictureWrappingView.swift */,
 			);
 			path = PicturesDesk;
 			sourceTree = "<group>";
@@ -148,6 +174,9 @@
 			dependencies = (
 			);
 			name = PicturesDesk;
+			packageProductDependencies = (
+				3F082939278492FE00A7CAEB /* WrappingHStack */,
+			);
 			productName = PicturesDesk;
 			productReference = 3F22D98F26F90C31009A0F1A /* PicturesDesk.app */;
 			productType = "com.apple.product-type.application";
@@ -195,7 +224,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					3F22D98E26F90C31009A0F1A = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -219,6 +248,9 @@
 				Base,
 			);
 			mainGroup = 3F22D98626F90C31009A0F1A;
+			packageReferences = (
+				3F082938278492FE00A7CAEB /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = 3F22D99026F90C31009A0F1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,7 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0829332784806D00A7CAEB /* FileBookmarkHandler.swift in Sources */,
+				3F22D9BF26F90D2B009A0F1A /* PictureView.swift in Sources */,
+				3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */,
+				3F08293C2784934000A7CAEB /* PictureWrappingView.swift in Sources */,
+				3F22D9C326F91E29009A0F1A /* PictureGridView.swift in Sources */,
 				3F22D99526F90C31009A0F1A /* ContentView.swift in Sources */,
+				3F22D9C726F92D1B009A0F1A /* AppDelegate.swift in Sources */,
+				3F0829352784827200A7CAEB /* ApplicationSettings.swift in Sources */,
+				3F22D9C126F90E34009A0F1A /* PicturesRepository.swift in Sources */,
 				3F22D99326F90C31009A0F1A /* PicturesDeskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -404,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -419,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PicturesDesk/PicturesDesk.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PicturesDesk/Preview Content\"";
@@ -430,7 +471,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.PicturesDesk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -443,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PicturesDesk/PicturesDesk.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PicturesDesk/Preview Content\"";
@@ -454,7 +496,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.PicturesDesk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -585,6 +627,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F082938278492FE00A7CAEB /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F082939278492FE00A7CAEB /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F082938278492FE00A7CAEB /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F22D98726F90C31009A0F1A /* Project object */;
 }
