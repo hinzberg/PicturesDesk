@@ -21,12 +21,12 @@ import Cocoa
 class FileBookmarkHandler {
 
     static let shared = FileBookmarkHandler()
-    
     private var bookmarks = [URL: Data]()
     
-    private init() {
-    }
+    private init() {  }
     
+    /// Show an NSOpenPanel and saves the selected folder in the bookmarks
+    /// - Returns: Selected URL
     func openFolderSelection() -> URL?
     {
         let openPanel = NSOpenPanel()
@@ -45,13 +45,11 @@ class FileBookmarkHandler {
         return openPanel.url
     }
     
-    func saveBookmarksData()
-    {
-        let path = getBookmarkPath()
-        NSKeyedArchiver.archiveRootObject(bookmarks, toFile: path)
-    }
-
-    func storeFolderInBookmark(url: URL)
+    ///  Adds another Url to the dicitionary of booksmarks
+    ///  Does not save the bookmark file.
+    ///  Use saveBookmarksArchive to save
+    /// - Parameter url: url
+    public func storeFolderInBookmark(url: URL)
     {
         do
         {
@@ -62,17 +60,26 @@ class FileBookmarkHandler {
         {
             Swift.print ("Error storing bookmarks")
         }
-
     }
-
-    func getBookmarkPath() -> String
+    
+    /// Location of archived bookmarks directory
+    /// - Returns: Location folder
+    private func getBookmarkPath() -> String
     {
         var url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0] as URL
         url = url.appendingPathComponent("Bookmarks.dict")
         return url.path
     }
-
-    func loadBookmarks()
+    
+    /// Saves bookmarks to file
+    public func saveBookmarksArchive()
+    {
+        let path = getBookmarkPath()
+        NSKeyedArchiver.archiveRootObject(bookmarks, toFile: path)
+    }
+    
+    /// Loads bookmarks from file
+    func loadBookmarksArchive()
     {
         let path = getBookmarkPath()
         
@@ -86,8 +93,10 @@ class FileBookmarkHandler {
             }
         }
     }
-
-    func restoreBookmark(_ bookmark: (key: URL, value: Data))
+    
+    /// Restores a bookmark (typical after loading from file)
+    /// - Parameter bookmark: a bookmark
+    private func restoreBookmark(_ bookmark: (key: URL, value: Data))
     {
         let restoredUrl: URL?
         var isStale = false
@@ -117,8 +126,9 @@ class FileBookmarkHandler {
                 }
             }
         }
-
     }
     
-    
+    public func getBookmarksFolders() ->[URL] {
+        return Array(self.bookmarks.keys)
+    }
 }

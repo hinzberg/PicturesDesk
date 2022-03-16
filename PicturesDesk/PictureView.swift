@@ -6,14 +6,14 @@ import SwiftUI
 
 struct PictureView: View {
     
-    @EnvironmentObject var settings : ApplicationSettings
+    @Binding var pictureSize: Double
+    private var fileName: String
+    private var fileURL:URL?
     
-    public var fileName: String
-    public var fileURL:URL?
-    
-    init(item : PictureItem) {
+    init(item : PictureItem, size : Binding<Double>) {
         self.fileURL = item.fileURL
         self.fileName = item.fileURL.lastPathComponent
+        self._pictureSize = size
     }
     
     var body: some View {
@@ -27,13 +27,13 @@ struct PictureView: View {
                     Rectangle()
                         .fill(Color.clear)
                 }
-                .frame(width: settings.pictureSize , height: settings.pictureSize)
+                .frame(width: pictureSize, height: pictureSize)
                 .cornerRadius(10)
             
             Text(fileName)
                 .foregroundColor(.primary)
         }
-        .frame(width:  (settings.pictureSize + 30), height: (settings.pictureSize + 30), alignment: .center)
+        .frame(width: pictureSize + 50, height: pictureSize + 50, alignment: .center)
         .background(Material.ultraThin)
         .cornerRadius(10)
     }

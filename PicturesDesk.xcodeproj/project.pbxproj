@@ -12,16 +12,17 @@
 		3F08293A278492FE00A7CAEB /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3F082939278492FE00A7CAEB /* WrappingHStack */; };
 		3F08293C2784934000A7CAEB /* PictureWrappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08293B2784934000A7CAEB /* PictureWrappingView.swift */; };
 		3F22D99326F90C31009A0F1A /* PicturesDeskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */; };
-		3F22D99526F90C31009A0F1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99426F90C31009A0F1A /* ContentView.swift */; };
+		3F22D99526F90C31009A0F1A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99426F90C31009A0F1A /* MainView.swift */; };
 		3F22D99726F90C32009A0F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F22D99626F90C32009A0F1A /* Assets.xcassets */; };
 		3F22D99A26F90C32009A0F1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F22D99926F90C32009A0F1A /* Preview Assets.xcassets */; };
 		3F22D9A626F90C32009A0F1A /* PicturesDeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9A526F90C32009A0F1A /* PicturesDeskTests.swift */; };
 		3F22D9B126F90C32009A0F1A /* PicturesDeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9B026F90C32009A0F1A /* PicturesDeskUITests.swift */; };
 		3F22D9BF26F90D2B009A0F1A /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9BE26F90D2B009A0F1A /* PictureView.swift */; };
 		3F22D9C126F90E34009A0F1A /* PicturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */; };
-		3F22D9C326F91E29009A0F1A /* PictureGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C226F91E29009A0F1A /* PictureGridView.swift */; };
 		3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C426F92586009A0F1A /* PictureItem.swift */; };
 		3F22D9C726F92D1B009A0F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */; };
+		3FA9800A27E26ECA00DAC4B3 /* SidebarFoldersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9800927E26ECA00DAC4B3 /* SidebarFoldersView.swift */; };
+		3FA9800C27E27EB400DAC4B3 /* SidebarFoldersItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 		3F08293B2784934000A7CAEB /* PictureWrappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureWrappingView.swift; sourceTree = "<group>"; };
 		3F22D98F26F90C31009A0F1A /* PicturesDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicturesDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesDeskApp.swift; sourceTree = "<group>"; };
-		3F22D99426F90C31009A0F1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F22D99426F90C31009A0F1A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3F22D99626F90C32009A0F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F22D99926F90C32009A0F1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F22D99B26F90C32009A0F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,9 +61,11 @@
 		3F22D9B226F90C32009A0F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F22D9BE26F90D2B009A0F1A /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesRepository.swift; sourceTree = "<group>"; };
-		3F22D9C226F91E29009A0F1A /* PictureGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureGridView.swift; sourceTree = "<group>"; };
 		3F22D9C426F92586009A0F1A /* PictureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItem.swift; sourceTree = "<group>"; };
 		3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FA9800927E26ECA00DAC4B3 /* SidebarFoldersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarFoldersView.swift; sourceTree = "<group>"; };
+		3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarFoldersItemView.swift; sourceTree = "<group>"; };
+		3FA9800D27E281B200DAC4B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 		3F22D98626F90C31009A0F1A = {
 			isa = PBXGroup;
 			children = (
+				3FA9800D27E281B200DAC4B3 /* README.md */,
 				3F22D99126F90C31009A0F1A /* PicturesDesk */,
 				3F22D9A426F90C32009A0F1A /* PicturesDeskTests */,
 				3F22D9AF26F90C32009A0F1A /* PicturesDeskUITests */,
@@ -116,18 +120,19 @@
 			children = (
 				3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */,
 				3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */,
-				3F22D99426F90C31009A0F1A /* ContentView.swift */,
-				3F0829322784806D00A7CAEB /* FileBookmarkHandler.swift */,
+				3F22D99426F90C31009A0F1A /* MainView.swift */,
+				3FA9800927E26ECA00DAC4B3 /* SidebarFoldersView.swift */,
+				3F08293B2784934000A7CAEB /* PictureWrappingView.swift */,
 				3F22D99626F90C32009A0F1A /* Assets.xcassets */,
 				3F22D99B26F90C32009A0F1A /* Info.plist */,
 				3F22D99C26F90C32009A0F1A /* PicturesDesk.entitlements */,
 				3F22D99826F90C32009A0F1A /* Preview Content */,
 				3F22D9BE26F90D2B009A0F1A /* PictureView.swift */,
-				3F22D9C226F91E29009A0F1A /* PictureGridView.swift */,
 				3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */,
 				3F22D9C426F92586009A0F1A /* PictureItem.swift */,
 				3F0829342784827200A7CAEB /* ApplicationSettings.swift */,
-				3F08293B2784934000A7CAEB /* PictureWrappingView.swift */,
+				3F0829322784806D00A7CAEB /* FileBookmarkHandler.swift */,
+				3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */,
 			);
 			path = PicturesDesk;
 			sourceTree = "<group>";
@@ -297,10 +302,11 @@
 				3F22D9BF26F90D2B009A0F1A /* PictureView.swift in Sources */,
 				3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */,
 				3F08293C2784934000A7CAEB /* PictureWrappingView.swift in Sources */,
-				3F22D9C326F91E29009A0F1A /* PictureGridView.swift in Sources */,
-				3F22D99526F90C31009A0F1A /* ContentView.swift in Sources */,
+				3F22D99526F90C31009A0F1A /* MainView.swift in Sources */,
 				3F22D9C726F92D1B009A0F1A /* AppDelegate.swift in Sources */,
+				3FA9800C27E27EB400DAC4B3 /* SidebarFoldersItemView.swift in Sources */,
 				3F0829352784827200A7CAEB /* ApplicationSettings.swift in Sources */,
+				3FA9800A27E26ECA00DAC4B3 /* SidebarFoldersView.swift in Sources */,
 				3F22D9C126F90E34009A0F1A /* PicturesRepository.swift in Sources */,
 				3F22D99326F90C31009A0F1A /* PicturesDeskApp.swift in Sources */,
 			);

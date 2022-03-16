@@ -18,6 +18,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
         
-        FileBookmarkHandler.shared.loadBookmarks()
+        FileBookmarkHandler.shared.loadBookmarksArchive()
     }
 }

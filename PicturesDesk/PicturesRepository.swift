@@ -16,7 +16,7 @@ public class PicturesRepository : ObservableObject
         
         self.currentDirectory = URL.init(fileURLWithPath: paths[0])
         FileBookmarkHandler.shared.storeFolderInBookmark(url: currentDirectory)
-        FileBookmarkHandler.shared.saveBookmarksData()
+        FileBookmarkHandler.shared.saveBookmarksArchive()
         self.loadDataForFolderWithUrl(self.currentDirectory)
     }
     
