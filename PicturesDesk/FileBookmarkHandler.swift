@@ -18,16 +18,16 @@
 
 import Cocoa
 
-class FileBookmarkHandler {
-
+class FileBookmarkHandler : ObservableObject {
+    
     static let shared = FileBookmarkHandler()
-    private var bookmarks = [URL: Data]()
+    @Published private var bookmarks = [URL: Data]()
     
     private init() {  }
     
     /// Show an NSOpenPanel and saves the selected folder in the bookmarks
     /// - Returns: Selected URL
-    func openFolderSelection() -> URL?
+    public func openFolderSelection(save : Bool)
     {
         let openPanel = NSOpenPanel()
         openPanel.allowsMultipleSelection = false
@@ -35,14 +35,16 @@ class FileBookmarkHandler {
         openPanel.canCreateDirectories = true
         openPanel.canChooseFiles = false
         openPanel.begin
-            { (result) -> Void in
-                if result.rawValue == NSApplication.ModalResponse.OK.rawValue
-                {
-                    let url = openPanel.url
-                    self.storeFolderInBookmark(url: url!)
+        { (result) -> Void in
+            if result.rawValue == NSApplication.ModalResponse.OK.rawValue
+            {
+                let url = openPanel.url
+                self.storeFolderInBookmark(url: url!)
+                if (save == true){
+                    self.saveBookmarksArchive()
                 }
+            }
         }
-        return openPanel.url
     }
     
     ///  Adds another Url to the dicitionary of booksmarks
@@ -75,6 +77,7 @@ class FileBookmarkHandler {
     public func saveBookmarksArchive()
     {
         let path = getBookmarkPath()
+        print(bookmarks.count)
         NSKeyedArchiver.archiveRootObject(bookmarks, toFile: path)
     }
     
@@ -100,7 +103,7 @@ class FileBookmarkHandler {
     {
         let restoredUrl: URL?
         var isStale = false
-
+        
         print ("Restoring \(bookmark.key)")
         do
         {
@@ -111,7 +114,7 @@ class FileBookmarkHandler {
             print ("Error restoring bookmarks")
             restoredUrl = nil
         }
-
+        
         if let url = restoredUrl
         {
             if isStale
@@ -130,5 +133,13 @@ class FileBookmarkHandler {
     
     public func getBookmarksFolders() ->[URL] {
         return Array(self.bookmarks.keys)
+    }
+    
+    public func deleteBookmark(url :URL, save : Bool) {
+        self.bookmarks.removeValue(forKey: url)
+        
+        if (save == true){
+            self.saveBookmarksArchive()
+        }
     }
 }

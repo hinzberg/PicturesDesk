@@ -13,10 +13,12 @@ public class PicturesRepository : ObservableObject
         // The Startup path for the application is the desktop
         // You will see all images on the desktop first
         let paths = NSSearchPathForDirectoriesInDomains(.desktopDirectory, .userDomainMask, true)
-        
         self.currentDirectory = URL.init(fileURLWithPath: paths[0])
+        
+        /*
         FileBookmarkHandler.shared.storeFolderInBookmark(url: currentDirectory)
         FileBookmarkHandler.shared.saveBookmarksArchive()
+        */
         self.loadDataForFolderWithUrl(self.currentDirectory)
     }
     
