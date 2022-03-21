@@ -7,19 +7,17 @@ import SwiftUI
 struct PictureView: View {
     
     @Binding var pictureSize: Double
-    private var fileName: String
-    private var fileURL:URL?
-    
+    @ObservedObject var item:PictureItem
+  
     init(item : PictureItem, size : Binding<Double>) {
-        self.fileURL = item.fileURL
-        self.fileName = item.fileURL.lastPathComponent
+        self.item = item
         self._pictureSize = size
     }
     
     var body: some View {
         VStack {
             
-            AsyncImage(url: self.fileURL) { image in
+            AsyncImage(url: self.item.fileURL) { image in
                     image
                         .resizable()
                         .scaledToFit()
@@ -30,11 +28,17 @@ struct PictureView: View {
                 .frame(width: pictureSize, height: pictureSize)
                 .cornerRadius(10)
             
-            Text(fileName)
+            Text(self.item.fileURL.lastPathComponent)
                 .foregroundColor(.primary)
         }
         .frame(width: pictureSize + 50, height: pictureSize + 50, alignment: .center)
-        .background(Material.ultraThin)
+        
+        .if(item.isSelected) { view in
+            view.background(Color.accentColor)
+        }
+        .if(!item.isSelected) { view in
+            view.background(Material.thinMaterial)
+        }
         .cornerRadius(10)
     }
 }

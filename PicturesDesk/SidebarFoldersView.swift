@@ -13,9 +13,10 @@ struct SidebarFoldersView: View {
             List {
                 Section (header: Text("Folders")) {
                     ForEach (bookmarksHandler.getBookmarksFolders(), id:\.self) { url in
-                        SidebarFoldersItemView(url: url).contextMenu {
-                            Button(action: { self.removeFolder(url: url) }, label: {Label("Remove folder", systemImage: "trash")}
-                            )
+                        NavigationLink(destination: PictureWrappingView(url: url) ) {
+                            SidebarFoldersItemView(url: url)
+                                .contextMenu {  Button(action: { self.removeFolder(url: url) }, label: {Label("Remove folder", systemImage: "trash")}
+                                )}
                         }
                     }
                 }

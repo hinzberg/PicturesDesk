@@ -7,17 +7,20 @@ import SwiftUI
 struct MainView: View {
     
     @StateObject var settings = ApplicationSettings()
+    @StateObject var bookmarksHandler = FileBookmarkHandler.shared
+    private var startUpDirectory : URL?
     
     init() {
-        //FileBookmarkHandler.shared.openFolderSelection()
-        //FileBookmarkHandler.shared.saveBookmarksData()
+        let paths = NSSearchPathForDirectoriesInDomains(.desktopDirectory, .userDomainMask, true)
+        self.startUpDirectory = URL.init(fileURLWithPath: paths[0])
+        
+        self.startUpDirectory = bookmarksHandler.getBookmarksFolders().last
     }
     
     var body: some View {
-
         NavigationView {
                 SidebarFoldersView()
-                PictureWrappingView()
+                PictureWrappingView(url: startUpDirectory)
         }
         .environmentObject(settings)
     }

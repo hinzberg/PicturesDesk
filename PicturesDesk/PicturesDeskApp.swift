@@ -12,12 +12,13 @@ struct PicturesDeskApp: App {
     
     @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var settings = ApplicationSettings()
+    private var startUpDirectory : URL?
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 SidebarFoldersView()
-                PictureWrappingView()
+                PictureWrappingView(url: nil)
             }
             .toolbar {
                 

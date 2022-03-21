@@ -21,6 +21,8 @@
 		3F22D9C126F90E34009A0F1A /* PicturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */; };
 		3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C426F92586009A0F1A /* PictureItem.swift */; };
 		3F22D9C726F92D1B009A0F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */; };
+		3F57F3D527E90A67002E7C2D /* PictureWrappingViewHeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57F3D427E90A67002E7C2D /* PictureWrappingViewHeadlineView.swift */; };
+		3F57F3D727E921FD002E7C2D /* View+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57F3D627E921FD002E7C2D /* View+Extension .swift */; };
 		3FA9800A27E26ECA00DAC4B3 /* SidebarFoldersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9800927E26ECA00DAC4B3 /* SidebarFoldersView.swift */; };
 		3FA9800C27E27EB400DAC4B3 /* SidebarFoldersItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesRepository.swift; sourceTree = "<group>"; };
 		3F22D9C426F92586009A0F1A /* PictureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItem.swift; sourceTree = "<group>"; };
 		3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F57F3D427E90A67002E7C2D /* PictureWrappingViewHeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureWrappingViewHeadlineView.swift; sourceTree = "<group>"; };
+		3F57F3D627E921FD002E7C2D /* View+Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension .swift"; sourceTree = "<group>"; };
 		3FA9800927E26ECA00DAC4B3 /* SidebarFoldersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarFoldersView.swift; sourceTree = "<group>"; };
 		3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarFoldersItemView.swift; sourceTree = "<group>"; };
 		3FA9800D27E281B200DAC4B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				3F0829342784827200A7CAEB /* ApplicationSettings.swift */,
 				3F0829322784806D00A7CAEB /* FileBookmarkHandler.swift */,
 				3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */,
+				3F57F3D427E90A67002E7C2D /* PictureWrappingViewHeadlineView.swift */,
+				3F57F3D627E921FD002E7C2D /* View+Extension .swift */,
 			);
 			path = PicturesDesk;
 			sourceTree = "<group>";
@@ -298,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F57F3D727E921FD002E7C2D /* View+Extension .swift in Sources */,
+				3F57F3D527E90A67002E7C2D /* PictureWrappingViewHeadlineView.swift in Sources */,
 				3F0829332784806D00A7CAEB /* FileBookmarkHandler.swift in Sources */,
 				3F22D9BF26F90D2B009A0F1A /* PictureView.swift in Sources */,
 				3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */,

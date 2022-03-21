@@ -14,14 +14,9 @@ public class PicturesRepository : ObservableObject
         // You will see all images on the desktop first
         let paths = NSSearchPathForDirectoriesInDomains(.desktopDirectory, .userDomainMask, true)
         self.currentDirectory = URL.init(fileURLWithPath: paths[0])
-        
-        /*
-        FileBookmarkHandler.shared.storeFolderInBookmark(url: currentDirectory)
-        FileBookmarkHandler.shared.saveBookmarksArchive()
-        */
         self.loadDataForFolderWithUrl(self.currentDirectory)
     }
-    
+
     func loadDataForFolderWithUrl(_ folderURL: URL)
     {
         let urls = getFilesURLFromFolder(folderURL)
@@ -32,7 +27,7 @@ public class PicturesRepository : ObservableObject
             print("\(urls.count) images found in directory \(folderURL.lastPathComponent)")
             
             for url in urls {
-                print("\(url.lastPathComponent)")
+                // print("\(url.lastPathComponent)")
                 
                 let item = PictureItem(url: url)
                 self.pictureItems.append(item)
