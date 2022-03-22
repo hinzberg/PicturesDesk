@@ -11,6 +11,7 @@
 		3F0829352784827200A7CAEB /* ApplicationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0829342784827200A7CAEB /* ApplicationSettings.swift */; };
 		3F08293A278492FE00A7CAEB /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3F082939278492FE00A7CAEB /* WrappingHStack */; };
 		3F08293C2784934000A7CAEB /* PictureWrappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08293B2784934000A7CAEB /* PictureWrappingView.swift */; };
+		3F13CDC827EA65A1003667A2 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13CDC727EA65A1003667A2 /* FileHelper.swift */; };
 		3F22D99326F90C31009A0F1A /* PicturesDeskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */; };
 		3F22D99526F90C31009A0F1A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99426F90C31009A0F1A /* MainView.swift */; };
 		3F22D99726F90C32009A0F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F22D99626F90C32009A0F1A /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		3F0829322784806D00A7CAEB /* FileBookmarkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileBookmarkHandler.swift; sourceTree = "<group>"; };
 		3F0829342784827200A7CAEB /* ApplicationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSettings.swift; sourceTree = "<group>"; };
 		3F08293B2784934000A7CAEB /* PictureWrappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureWrappingView.swift; sourceTree = "<group>"; };
+		3F13CDC727EA65A1003667A2 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		3F22D98F26F90C31009A0F1A /* PicturesDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicturesDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesDeskApp.swift; sourceTree = "<group>"; };
 		3F22D99426F90C31009A0F1A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */,
 				3F57F3D427E90A67002E7C2D /* PictureWrappingViewHeadlineView.swift */,
 				3F57F3D627E921FD002E7C2D /* View+Extension .swift */,
+				3F13CDC727EA65A1003667A2 /* FileHelper.swift */,
 			);
 			path = PicturesDesk;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				3F57F3D727E921FD002E7C2D /* View+Extension .swift in Sources */,
 				3F57F3D527E90A67002E7C2D /* PictureWrappingViewHeadlineView.swift in Sources */,
 				3F0829332784806D00A7CAEB /* FileBookmarkHandler.swift in Sources */,
+				3F13CDC827EA65A1003667A2 /* FileHelper.swift in Sources */,
 				3F22D9BF26F90D2B009A0F1A /* PictureView.swift in Sources */,
 				3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */,
 				3F08293C2784934000A7CAEB /* PictureWrappingView.swift in Sources */,

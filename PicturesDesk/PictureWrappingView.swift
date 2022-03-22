@@ -8,6 +8,8 @@ import WrappingHStack
 struct PictureWrappingView: View {
     
     @ObservedObject var picturesRepository = PicturesRepository()
+    @ObservedObject var bookmarksHandler = FileBookmarkHandler.shared
+    
     @State private var pictureSize: Double = 200
     @State var selection = Set<String>()
     @EnvironmentObject var settings : ApplicationSettings
@@ -31,8 +33,12 @@ struct PictureWrappingView: View {
                         .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 0))
                         .contextMenu {
                             Button("Show in Finder") { showInFinder(url: item.fileURL) }
-                                    }
-                        .onTapGesture {
+                            Menu("Move selected to") {
+                                ForEach (bookmarksHandler.getBookmarksFolders(), id:\.self) { url in
+                                    Button("\(url.lastPathComponent)") { self.moveSelectedTo(url: url) }
+                                }
+                            }
+                        }.onTapGesture {
                             item.isSelected.toggle()
                             print(item.isSelected)
                         }
@@ -59,11 +65,22 @@ struct PictureWrappingView: View {
         }
     }
     
-    private func showInFinder(url : URL) {
+    private func showInFinder(url : URL)
+    {
         NSWorkspace.shared.activateFileViewerSelecting([url])
     }
     
-    
+    private func moveSelectedTo(url : URL)
+    {
+        print("Move selected to \(url.lastPathComponent)")
+        
+        let selectedItems = self.picturesRepository.getSelectedItems()
+        for item in selectedItems {
+            let destination = url.appendingPathComponent(item.fileURL.lastPathComponent)
+            let success = FileHelper.shared.renameFile(source: item.fileURL, destination: destination)
+            if success { _ = self.picturesRepository.remove(item: item) }
+        }
+    }
 }
 
 struct WrappingHStackView_Previews: PreviewProvider {

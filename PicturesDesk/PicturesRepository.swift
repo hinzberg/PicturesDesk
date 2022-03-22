@@ -16,7 +16,7 @@ public class PicturesRepository : ObservableObject
         self.currentDirectory = URL.init(fileURLWithPath: paths[0])
         self.loadDataForFolderWithUrl(self.currentDirectory)
     }
-
+    
     func loadDataForFolderWithUrl(_ folderURL: URL)
     {
         let urls = getFilesURLFromFolder(folderURL)
@@ -63,5 +63,18 @@ public class PicturesRepository : ObservableObject
             }
         }
         return urls
+    }
+    
+    public func getSelectedItems() -> [PictureItem] {
+        return self.pictureItems.filter{ $0.isSelected == true}
+    }
+    
+    public func remove(item : PictureItem) -> Bool {
+        if let index = self.pictureItems.firstIndex(of: item) {
+            self.pictureItems.remove(at: index)
+            item.isSelected = false
+            return true
+        }
+        return false
     }
 }

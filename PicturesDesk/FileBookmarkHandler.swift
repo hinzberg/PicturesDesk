@@ -132,7 +132,7 @@ class FileBookmarkHandler : ObservableObject {
     }
     
     public func getBookmarksFolders() ->[URL] {
-        return Array(self.bookmarks.keys)
+        return Array(self.bookmarks.keys).sorted{$0.lastPathComponent < $1.lastPathComponent   }
     }
     
     public func deleteBookmark(url :URL, save : Bool) {
