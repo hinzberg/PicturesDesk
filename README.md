@@ -1,9 +1,12 @@
 #  Pictures Desk
 
 ##ToDo
-- Quicklook
 - Delete selected
-- Move (show count) in contextmenu
+- Rename one
+- Rename many
+
+### 2022-03-22
+- Quicklook
 
 ### 2022-03-22
 - Move selected Items via Contextmenu

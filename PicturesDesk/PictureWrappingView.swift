@@ -3,6 +3,7 @@
 //  Created by Holger Hinzberg on 04.01.22.
 
 import SwiftUI
+import Quartz
 import WrappingHStack
 
 struct PictureWrappingView: View {
@@ -33,6 +34,7 @@ struct PictureWrappingView: View {
                         .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 0))
                         .contextMenu {
                             Button("Show in Finder") { showInFinder(url: item.fileURL) }
+                            Button("Quicklook") { showQuicklook(url: item.fileURL) }
                             Menu("Move selected to") {
                                 ForEach (bookmarksHandler.getBookmarksFolders(), id:\.self) { url in
                                     Button("\(url.lastPathComponent)") { self.moveSelectedTo(url: url) }
@@ -63,6 +65,11 @@ struct PictureWrappingView: View {
         {
             self.picturesRepository.loadDataForFolderWithUrl(url)
         }
+    }
+    
+    private func showQuicklook(url : URL)
+    {
+        _ = QuicklookWrapper(url: url)
     }
     
     private func showInFinder(url : URL)
