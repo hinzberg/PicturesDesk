@@ -69,6 +69,10 @@ public class PicturesRepository : ObservableObject
         return self.pictureItems.filter{ $0.isSelected == true}
     }
 
+    public func getFirstSelectedItem() -> PictureItem? {
+        return self.pictureItems.filter{ $0.isSelected == true}.first
+    }
+        
     public func remove(item : PictureItem) -> Bool {
         if let index = self.pictureItems.firstIndex(of: item) {
             self.pictureItems.remove(at: index)

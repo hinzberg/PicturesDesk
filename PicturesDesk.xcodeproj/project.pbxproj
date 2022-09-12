@@ -12,13 +12,14 @@
 		3F08293A278492FE00A7CAEB /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3F082939278492FE00A7CAEB /* WrappingHStack */; };
 		3F08293C2784934000A7CAEB /* PictureWrappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08293B2784934000A7CAEB /* PictureWrappingView.swift */; };
 		3F13CDC827EA65A1003667A2 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13CDC727EA65A1003667A2 /* FileHelper.swift */; };
+		3F1A89AB28CFB8750090FB7C /* Hinzberg-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3F1A89AA28CFB8750090FB7C /* Hinzberg-SwiftUI */; };
 		3F22D99326F90C31009A0F1A /* PicturesDeskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */; };
 		3F22D99526F90C31009A0F1A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D99426F90C31009A0F1A /* MainView.swift */; };
 		3F22D99726F90C32009A0F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F22D99626F90C32009A0F1A /* Assets.xcassets */; };
 		3F22D99A26F90C32009A0F1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F22D99926F90C32009A0F1A /* Preview Assets.xcassets */; };
 		3F22D9A626F90C32009A0F1A /* PicturesDeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9A526F90C32009A0F1A /* PicturesDeskTests.swift */; };
 		3F22D9B126F90C32009A0F1A /* PicturesDeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9B026F90C32009A0F1A /* PicturesDeskUITests.swift */; };
-		3F22D9BF26F90D2B009A0F1A /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9BE26F90D2B009A0F1A /* PictureView.swift */; };
+		3F22D9BF26F90D2B009A0F1A /* PictureItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9BE26F90D2B009A0F1A /* PictureItemView.swift */; };
 		3F22D9C126F90E34009A0F1A /* PicturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */; };
 		3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C426F92586009A0F1A /* PictureItem.swift */; };
 		3F22D9C726F92D1B009A0F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */; };
@@ -26,6 +27,8 @@
 		3F57F3D727E921FD002E7C2D /* View+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57F3D627E921FD002E7C2D /* View+Extension .swift */; };
 		3FA9800A27E26ECA00DAC4B3 /* SidebarFoldersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9800927E26ECA00DAC4B3 /* SidebarFoldersView.swift */; };
 		3FA9800C27E27EB400DAC4B3 /* SidebarFoldersItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */; };
+		3FC0DEF927FE1380002B34CD /* PictureWrappingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0DEF827FE1380002B34CD /* PictureWrappingViewController.swift */; };
+		3FC0DEFB27FE169B002B34CD /* RenameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0DEFA27FE169B002B34CD /* RenameView.swift */; };
 		3FD9DE2B27EBAF1F00069F23 /* QuicklookWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9DE2A27EBAF1F00069F23 /* QuicklookWrapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +67,7 @@
 		3F22D9AC26F90C32009A0F1A /* PicturesDeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicturesDeskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F22D9B026F90C32009A0F1A /* PicturesDeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesDeskUITests.swift; sourceTree = "<group>"; };
 		3F22D9B226F90C32009A0F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F22D9BE26F90D2B009A0F1A /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
+		3F22D9BE26F90D2B009A0F1A /* PictureItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItemView.swift; sourceTree = "<group>"; };
 		3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesRepository.swift; sourceTree = "<group>"; };
 		3F22D9C426F92586009A0F1A /* PictureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureItem.swift; sourceTree = "<group>"; };
 		3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 		3FA9800927E26ECA00DAC4B3 /* SidebarFoldersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarFoldersView.swift; sourceTree = "<group>"; };
 		3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarFoldersItemView.swift; sourceTree = "<group>"; };
 		3FA9800D27E281B200DAC4B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3FC0DEF827FE1380002B34CD /* PictureWrappingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureWrappingViewController.swift; sourceTree = "<group>"; };
+		3FC0DEFA27FE169B002B34CD /* RenameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameView.swift; sourceTree = "<group>"; };
 		3FD9DE2A27EBAF1F00069F23 /* QuicklookWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicklookWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F08293A278492FE00A7CAEB /* WrappingHStack in Frameworks */,
+				3F1A89AB28CFB8750090FB7C /* Hinzberg-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F1A89AC28CFC1FE0090FB7C /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				3F22D9BE26F90D2B009A0F1A /* PictureItemView.swift */,
+				3F22D9C426F92586009A0F1A /* PictureItem.swift */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		3F1A89AD28CFC3A70090FB7C /* PictureWrappingView */ = {
+			isa = PBXGroup;
+			children = (
+				3F08293B2784934000A7CAEB /* PictureWrappingView.swift */,
+				3FC0DEF827FE1380002B34CD /* PictureWrappingViewController.swift */,
+			);
+			path = PictureWrappingView;
+			sourceTree = "<group>";
+		};
 		3F22D98626F90C31009A0F1A = {
 			isa = PBXGroup;
 			children = (
@@ -126,18 +150,17 @@
 		3F22D99126F90C31009A0F1A /* PicturesDesk */ = {
 			isa = PBXGroup;
 			children = (
+				3F1A89AD28CFC3A70090FB7C /* PictureWrappingView */,
+				3F1A89AC28CFC1FE0090FB7C /* Picture */,
 				3F22D9C626F92D1B009A0F1A /* AppDelegate.swift */,
 				3F22D99226F90C31009A0F1A /* PicturesDeskApp.swift */,
 				3F22D99426F90C31009A0F1A /* MainView.swift */,
 				3FA9800927E26ECA00DAC4B3 /* SidebarFoldersView.swift */,
-				3F08293B2784934000A7CAEB /* PictureWrappingView.swift */,
 				3F22D99626F90C32009A0F1A /* Assets.xcassets */,
 				3F22D99B26F90C32009A0F1A /* Info.plist */,
 				3F22D99C26F90C32009A0F1A /* PicturesDesk.entitlements */,
 				3F22D99826F90C32009A0F1A /* Preview Content */,
-				3F22D9BE26F90D2B009A0F1A /* PictureView.swift */,
 				3F22D9C026F90E34009A0F1A /* PicturesRepository.swift */,
-				3F22D9C426F92586009A0F1A /* PictureItem.swift */,
 				3F0829342784827200A7CAEB /* ApplicationSettings.swift */,
 				3F0829322784806D00A7CAEB /* FileBookmarkHandler.swift */,
 				3FA9800B27E27EB400DAC4B3 /* SidebarFoldersItemView.swift */,
@@ -145,6 +168,7 @@
 				3F57F3D627E921FD002E7C2D /* View+Extension .swift */,
 				3F13CDC727EA65A1003667A2 /* FileHelper.swift */,
 				3FD9DE2A27EBAF1F00069F23 /* QuicklookWrapper.swift */,
+				3FC0DEFA27FE169B002B34CD /* RenameView.swift */,
 			);
 			path = PicturesDesk;
 			sourceTree = "<group>";
@@ -193,6 +217,7 @@
 			name = PicturesDesk;
 			packageProductDependencies = (
 				3F082939278492FE00A7CAEB /* WrappingHStack */,
+				3F1A89AA28CFB8750090FB7C /* Hinzberg-SwiftUI */,
 			);
 			productName = PicturesDesk;
 			productReference = 3F22D98F26F90C31009A0F1A /* PicturesDesk.app */;
@@ -267,6 +292,7 @@
 			mainGroup = 3F22D98626F90C31009A0F1A;
 			packageReferences = (
 				3F082938278492FE00A7CAEB /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+				3F1A89A928CFB8750090FB7C /* XCRemoteSwiftPackageReference "Hinzberg-SwiftUI" */,
 			);
 			productRefGroup = 3F22D99026F90C31009A0F1A /* Products */;
 			projectDirPath = "";
@@ -315,14 +341,16 @@
 				3F0829332784806D00A7CAEB /* FileBookmarkHandler.swift in Sources */,
 				3FD9DE2B27EBAF1F00069F23 /* QuicklookWrapper.swift in Sources */,
 				3F13CDC827EA65A1003667A2 /* FileHelper.swift in Sources */,
-				3F22D9BF26F90D2B009A0F1A /* PictureView.swift in Sources */,
+				3F22D9BF26F90D2B009A0F1A /* PictureItemView.swift in Sources */,
 				3F22D9C526F92586009A0F1A /* PictureItem.swift in Sources */,
 				3F08293C2784934000A7CAEB /* PictureWrappingView.swift in Sources */,
 				3F22D99526F90C31009A0F1A /* MainView.swift in Sources */,
+				3FC0DEF927FE1380002B34CD /* PictureWrappingViewController.swift in Sources */,
 				3F22D9C726F92D1B009A0F1A /* AppDelegate.swift in Sources */,
 				3FA9800C27E27EB400DAC4B3 /* SidebarFoldersItemView.swift in Sources */,
 				3F0829352784827200A7CAEB /* ApplicationSettings.swift in Sources */,
 				3FA9800A27E26ECA00DAC4B3 /* SidebarFoldersView.swift in Sources */,
+				3FC0DEFB27FE169B002B34CD /* RenameView.swift in Sources */,
 				3F22D9C126F90E34009A0F1A /* PicturesRepository.swift in Sources */,
 				3F22D99326F90C31009A0F1A /* PicturesDeskApp.swift in Sources */,
 			);
@@ -659,6 +687,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		3F1A89A928CFB8750090FB7C /* XCRemoteSwiftPackageReference "Hinzberg-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hinzberg/Hinzberg-SwiftUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -666,6 +702,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F082938278492FE00A7CAEB /* XCRemoteSwiftPackageReference "WrappingHStack" */;
 			productName = WrappingHStack;
+		};
+		3F1A89AA28CFB8750090FB7C /* Hinzberg-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F1A89A928CFB8750090FB7C /* XCRemoteSwiftPackageReference "Hinzberg-SwiftUI" */;
+			productName = "Hinzberg-SwiftUI";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

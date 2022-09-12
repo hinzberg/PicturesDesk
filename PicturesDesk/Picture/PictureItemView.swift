@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct PictureView: View {
+struct PictureItemView: View {
     
     @Binding var pictureSize: Double
     @ObservedObject var item:PictureItem

@@ -1,9 +1,8 @@
 #  Pictures Desk
 
-##ToDo
-- Delete selected
-- Rename one
-- Rename many
+### 2022-09-12
+- Swift Packages added
+- Rename Single View via ContextMenu
 
 ### 2022-03-22
 - Quicklook
@@ -22,3 +21,6 @@
 - Folderlist in Sidebar
 - Add and remove folders from sidebar
 
+##ToDo
+- Delete selected
+- Rename many

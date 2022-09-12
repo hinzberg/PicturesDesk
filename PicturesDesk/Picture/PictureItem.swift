@@ -12,7 +12,7 @@ public class PictureItem : Identifiable, ObservableObject, Equatable
     }
     
     public var id = UUID()
-    public var fileURL:URL
+    @Published  public var fileURL:URL
     @Published public var isSelected : Bool
     
     init(url:URL) {
