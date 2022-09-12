@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Hinzberg_Foundation
 
 @main
 struct PicturesDeskApp: App {
@@ -20,23 +21,30 @@ struct PicturesDeskApp: App {
                 SidebarFoldersView()
                 PictureWrappingView(url: nil)
             }
-            .toolbar {
-                
-                ToolbarItem (placement: .navigation) {
-                    Button(action: self.ToggleSidebar, label: {
-                        Image(systemName: "sidebar.left").font(.headline)
-                    })}
-                                
-                ToolbarItem (placement: .primaryAction) {
-                    Button(action: self.doSomething, label: {
-                        Image(systemName: "bookmark.circle.fill").font(.headline)
-                    })}
+            .navigationTitle(getWindowTitle())
+            /*
+            .toolbar (id: "main") {
+                ToolbarItem(id: "files", placement: .navigation) {
+                    Button(action: self.ToggleSidebar) {
+                        Label("Toggle Sidebar", systemImage: "sidebar.left")
+                    }
+                }
+                ToolbarItem(id: "cleanup", placement: .primaryAction) {
+                    Button(action: self.doSomething ) {
+                            Label("Do something", systemImage: "bookmark.circle.fill")
+                    }
+                }
             }
-            
+            */
             .environmentObject(settings)
-        }.windowToolbarStyle(UnifiedCompactWindowToolbarStyle())
+        }
     }
     
+    func getWindowTitle() -> String
+    {
+        return "Pictures Desk - Version \(Bundle.main.releaseVersionNumber)"
+    }
+        
     func ToggleSidebar() {
         NSApp.keyWindow?.firstResponder?.tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
     }

@@ -23,9 +23,7 @@ struct PictureWrappingView: View {
     }
     
     var body: some View {
-        
         VStack {
-            
             PictureWrappingViewHeadlineView(url: self.currentFolderUrl)
             
             ScrollView{
@@ -53,7 +51,6 @@ struct PictureWrappingView: View {
                             print(item.isSelected)
                         }
                         .sheet(isPresented: $renameSheetIsPresented) {
-                            //RenameView(isPresented: $renameSheetIsPresented, urlParam: $currentSelectionUrl)
                             if controller.selectedItem != nil {
                                 controller.showTextInputRenameSheet() }
                         }
@@ -71,6 +68,19 @@ struct PictureWrappingView: View {
                 .background(.thinMaterial)
         }.background(.background)
             .onAppear(perform: { onViewAppear() })
+        
+            .toolbar (id: "main") {
+                ToolbarItem(id: "files", placement: .navigation) {
+                    Button(action: self.ToggleSidebar) {
+                        Label("Toggle Sidebar", systemImage: "sidebar.left")
+                    }
+                }
+                ToolbarItem(id: "cleanup", placement: .primaryAction) {
+                    Button(action: {} ) {
+                        Label("Do something", systemImage: "bookmark.circle.fill")
+                    }
+                }
+            }
     }
     
     private func onViewAppear()
@@ -80,6 +90,11 @@ struct PictureWrappingView: View {
             controller.picturesRepository.loadDataForFolderWithUrl(url)
         }
     }
+    
+    func ToggleSidebar() {
+        NSApp.keyWindow?.firstResponder?.tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
+    }
+    
 }
 
 struct WrappingHStackView_Previews: PreviewProvider {

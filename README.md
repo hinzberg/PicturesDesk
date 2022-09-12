@@ -3,6 +3,7 @@
 ### 2022-09-12
 - Swift Packages added
 - Rename Single View via ContextMenu
+- ToolbarItem updated
 
 ### 2022-03-22
 - Quicklook

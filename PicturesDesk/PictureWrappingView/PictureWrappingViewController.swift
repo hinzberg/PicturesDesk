@@ -1,9 +1,6 @@
-//
 //  PictureWrappingViewController.swift
 //  PicturesDesk
-//
 //  Created by Holger Hinzberg on 06.04.22.
-//
 
 import SwiftUI
 import Hinzberg_SwiftUI
