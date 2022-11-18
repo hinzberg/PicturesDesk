@@ -1,9 +1,6 @@
-//
 //  PicturesDeskApp.swift
 //  PicturesDesk
-//
 //  Created by Holger Hinzberg on 20.09.21.
-//
 
 import SwiftUI
 import Hinzberg_Foundation
@@ -17,25 +14,8 @@ struct PicturesDeskApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                SidebarFoldersView()
-                PictureWrappingView(url: nil)
-            }
+            NavigationManagerMainView()
             .navigationTitle(getWindowTitle())
-            /*
-            .toolbar (id: "main") {
-                ToolbarItem(id: "files", placement: .navigation) {
-                    Button(action: self.ToggleSidebar) {
-                        Label("Toggle Sidebar", systemImage: "sidebar.left")
-                    }
-                }
-                ToolbarItem(id: "cleanup", placement: .primaryAction) {
-                    Button(action: self.doSomething ) {
-                            Label("Do something", systemImage: "bookmark.circle.fill")
-                    }
-                }
-            }
-            */
             .environmentObject(settings)
         }
     }

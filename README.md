@@ -1,5 +1,8 @@
 #  Pictures Desk
 
+### 2022-11-18
+- Added NavigationSplitView
+
 ### 2022-09-12
 - Swift Packages added
 - Rename Single View via ContextMenu

@@ -18,6 +18,16 @@
 
 import Cocoa
 
+class FileBookmarkItem : Identifiable {
+    var id : UUID
+    var url : URL
+    
+    init(url: URL) {
+        self.id = UUID()
+        self.url = url
+    }
+}
+
 class FileBookmarkHandler : ObservableObject {
     
     static let shared = FileBookmarkHandler()
@@ -132,7 +142,16 @@ class FileBookmarkHandler : ObservableObject {
     }
     
     public func getBookmarksFolders() ->[URL] {
-        return Array(self.bookmarks.keys).sorted{$0.lastPathComponent < $1.lastPathComponent   }
+        return Array(self.bookmarks.keys).sorted{$0.lastPathComponent < $1.lastPathComponent }
+    }
+    
+    public func getBookmarksItems() -> [FileBookmarkItem] {
+        var items = [FileBookmarkItem]()
+        var urls : [URL] = Array(self.bookmarks.keys).sorted{$0.lastPathComponent < $1.lastPathComponent }
+        for url in urls {
+            items.append(FileBookmarkItem(url: url))
+        }
+        return items
     }
     
     public func deleteBookmark(url :URL, save : Bool) {

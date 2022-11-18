@@ -1,18 +1,12 @@
-//
 //  PictureWrappingViewHeadlineView.swift
 //  PicturesDesk
-//
 //  Created by Holger Hinzberg on 21.03.22.
-//
 
 import SwiftUI
 
 struct PictureWrappingViewHeadlineView: View {
-    
     private var url : URL?
-    
-    init(url : URL?)
-    {
+    init(url : URL?) {
         self.url = url
     }
     
@@ -21,7 +15,7 @@ struct PictureWrappingViewHeadlineView: View {
             Text(url != nil ? url!.lastPathComponent : "Headline")
                 .font(.title)
                 .foregroundColor(.accentColor)
-                .padding(EdgeInsets(top: 5, leading: 15, bottom: 5, trailing: 0))
+                .padding(EdgeInsets(top: 15, leading: 15, bottom: 0, trailing: 0))
             Spacer()
         }.background()
     }

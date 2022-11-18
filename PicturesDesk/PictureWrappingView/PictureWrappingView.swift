@@ -20,6 +20,11 @@ struct PictureWrappingView: View {
     {
         self.currentFolderUrl = url
         print("Init with \(self.currentFolderUrl?.path ?? "nil URL" )")
+        
+        if let url = self.currentFolderUrl {
+            controller.picturesRepository.removeAll()
+            controller.picturesRepository.loadDataForFolderWithUrl(url)
+        }
     }
     
     var body: some View {
@@ -67,14 +72,7 @@ struct PictureWrappingView: View {
             }.padding(EdgeInsets(top: 0, leading: 5, bottom: 5, trailing: 10))
                 .background(.thinMaterial)
         }.background(.background)
-            .onAppear(perform: { onViewAppear() })
-        
             .toolbar (id: "main") {
-                ToolbarItem(id: "files", placement: .navigation) {
-                    Button(action: self.ToggleSidebar) {
-                        Label("Toggle Sidebar", systemImage: "sidebar.left")
-                    }
-                }
                 ToolbarItem(id: "cleanup", placement: .primaryAction) {
                     Button(action: {} ) {
                         Label("Do something", systemImage: "bookmark.circle.fill")
@@ -82,19 +80,6 @@ struct PictureWrappingView: View {
                 }
             }
     }
-    
-    private func onViewAppear()
-    {
-        print("View appear with \(self.currentFolderUrl?.path ?? "nil URL" )")
-        if let url = self.currentFolderUrl {
-            controller.picturesRepository.loadDataForFolderWithUrl(url)
-        }
-    }
-    
-    func ToggleSidebar() {
-        NSApp.keyWindow?.firstResponder?.tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
-    }
-    
 }
 
 struct WrappingHStackView_Previews: PreviewProvider {
